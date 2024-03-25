@@ -1,0 +1,28 @@
+<!-- - Load the HTML structure for the landing page.
+- Include a form with labels and inputs for username, blog title, and blog content.
+- Link form.css and styles.css for styling.
+- Use logic.js to handle form submission and validation. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <!-- linking css -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+</head>
+<body>
+    <!-- form for username, title and content submission -->
+    <form class="blog-form">
+        <label for="username">Username</label>
+        <input type="text" name="username">
+        <label for="blog-title">Title</label>
+        <input type="text" name="blog-title">
+        <label for="blog-content">Content</label>
+        <input type="text" name="blog-content">
+        <input type="submit" value="Submit">
+    </form>
+    <script src="./assets/js/logic.js"></script>
+</body>
+</html>
