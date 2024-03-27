@@ -5,6 +5,7 @@
 //     - Display username, title, and content for each post.
 //   }
 
+
 // function setupToggleAndBackButton() {
 //   - Attach event listener for light/dark mode toggle.
 //     - On toggle, switch page styles accordingly.
