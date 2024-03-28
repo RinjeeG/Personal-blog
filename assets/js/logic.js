@@ -1,33 +1,27 @@
-// On Document Ready:
-//   - Check if on landing page or posts page and execute respective logic.
+document.addEventListener('DOMContentLoaded', function() {
+  const submitButton = document.getElementById("sub-btn");
+  if (submitButton) {
+      submitButton.onclick = function(event) {
+          event.preventDefault();
 
-// Form Submission:
-//   function handleFormSubmission(event) {
-//     - Prevent default form submission behavior.
-//     - Validate input fields for username, title, and content.
-//     - If valid, save blog post data to localStorage.
-//     - Redirect to blog.html (posts page).
-//     - If not valid, display message prompting to complete the form.
-//   }
-const blogEl = document.getElementsById("#blog-form");
-const nameEl = document.getElementsById("#username");
-const titleEl = document.getElementsById("#blog-title");
-const contentEl = document.getElementsById("#blog-content");
-const subEl = document.getElementsById("#sub-btn");
+          const username = document.querySelector('#username').value;
+          const blogTitle = document.querySelector('#blog-title').value;
+          const blogContent = document.querySelector('#blog-content').value;
 
+          if (username === '' || blogTitle === '' || blogContent === '') {
+              alert('All fields must be filled out');
+              return;
+          }
 
-function saveBlog(event) {
-  localStorage.setItem(nameEl,"#username",event.target.value);
-  localStorage.setItem(nameEl,"#blog-title",event.target.value);
-  localStorage.setItem(nameEl,"#blog-content",event.target.value);
-  return;
-}
+          let existingPosts = localStorage.getItem('blogPosts') ? JSON.parse(localStorage.getItem('blogPosts')) : [];
+          existingPosts.push({
+              username: username,
+              title: blogTitle,
+              content: blogContent
+          });
+          localStorage.setItem('blogPosts', JSON.stringify(existingPosts));
 
-fun
-// Page Initialization:
-//   function initializePage() {
-//     - Determine if on index.html or blog.html.
-//     - Call respective functions to setup page (e.g., displayPosts for blog.html).
-//   }
-
-// Attach event listeners to form submission.
+          window.location.href = "blog.html";
+      };
+  }
+});
