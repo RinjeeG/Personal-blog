@@ -1,7 +1,3 @@
-<!-- - Load the HTML structure for the posts page.
-- Include a header with a light mode/dark mode toggle and a "Back" button.
-- Use blog.js to dynamically render blog posts from localStorage.
-- Link blog.css and styles.css for styling. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,19 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Post</title>
+    <!-- linking css -->
     <link rel="stylesheet" href="./assets/css/blog.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <ol>
-            <li><a href="./index.html">Back</a></li>
-            <button class="theme" id="btn">mode</button>
-            </li>
-        </ol>
-    <section id="post-container">
+    <header class="header">
+        <nav class="nav-bar">
+            <button id="back-btn">Back</button>
+            <button id="theme-btn"></button>
+        </nav>
+    </header>
 
+    <section id="post-container">
     </section>
+    <footer class="footer">
+        <p><a href="https://rinjeeg.github.io/My-Portfolio/">Develpoer's Portfolio</a></p>
+    </footer>
+    <!-- js scripts -->
     <script src="./assets/js/blog.js"></script>
+    <script src="./assets/js/logic.js"></script>
 </body>
 </html>

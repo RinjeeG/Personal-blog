@@ -1,3 +1,26 @@
-/* - Use form.css to style the form elements on the landing page.
-- Use blog.css to style the post listings and header elements on the posts page.
-- Use styles.css for common styles, including the light and dark mode themes. */
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: solid 1px black;
+    width: 75%;
+    height: 75%;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+}
+
+#post-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border: double 1px black;
+    border-style: dotted;
+    margin: 10px;
+}

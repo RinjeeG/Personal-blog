@@ -1,0 +1,14 @@
+
+.blog-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: double solid black;
+}
+
+.blog-form input, .blog-form label {
+    width: 100%;
+    font-weight: bold;
+    text-decoration: underline;
+}
