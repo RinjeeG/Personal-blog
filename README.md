@@ -27,10 +27,13 @@ https://bootcampspot.instructure.com/courses/5271/external_tools/313
 https://www.w3schools.com/
 https://dev.to/crayoncode/css-day-night-switch-css-html-only-part-2-3ioc
 
-Contact
+## Contact
 For questions and feedback, please contact me at rinjigelu39@gmail.com
 
 ## Screenshot
 ![alt text](_C__Users_rinji_bootcamp_challenges_week-4-personal-blog_Personal-blog_index.html.png)
 
 ![alt text](_C__Users_rinji_bootcamp_challenges_week-4-personal-blog_Personal-blog_blog.html.png)
+
+## URL for blog
+https://rinjeeg.github.io/Personal-blog/
